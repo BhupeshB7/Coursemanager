@@ -128,6 +128,38 @@ This Course Management System is a simplified Spring Boot application designed t
 - `GET /enrollments/student/{studentId}` - View student enrollments
 - `POST /enrollments/update-grade/{id}` - Update enrollment grade
 - `GET /enrollments/delete/{id}` - Delete an enrollment
+### Fronted Features
+## Features
+
+### Student Management
+- Add new students with name, email, phone number, and address
+- View a paginated list of all students with search and filter options
+- Update existing student information
+- Delete students with confirmation
+- View courses enrolled by each student
+
+### Course Management
+- Create new courses with code, name, credit hours, and description
+- View a paginated list of all courses
+- Update course details
+- Delete courses with confirmation
+- View students enrolled in each course
+
+### Enrollment Management
+- Enroll students in courses with enrollment date tracking
+- View all enrollments with pagination
+- Filter enrollments by student or course
+- Remove enrollments with confirmation
+- Generate reports on enrollments
+
+### System Features
+- Responsive design that works on desktop and mobile devices
+- User-friendly interface with intuitive navigation
+- Form validation to ensure data integrity
+- Success and error notifications
+- Pagination for better performance with large datasets
+- Search and filter capabilities for easy data access
+- Modern UI with Font Awesome icons
 
 ## Best Practices Implemented
 
@@ -139,6 +171,67 @@ This Course Management System is a simplified Spring Boot application designed t
 - **Transaction Management**: ACID-compliant operations
 - **Pagination**: Efficient handling of large datasets
 - **Flash Messaging**: User-friendly success/error notifications
+
+
+## Project Structure
+
+```
+src/
+├── main/
+│   ├── java/
+│   │  └── com/
+│   │   └── bda/
+│   │    └── assignment/
+│   │         └── coursemanagement/
+│   │           ├── controller/
+│   │           │   ├── CourseController.java
+│   │           │   ├── EnrollmentController.java
+│   │           │   ├── HomeController.java
+│   │           │   └── StudentController.java
+│   │           ├── model/
+│   │           │   ├── Course.java
+│   │           │   ├── Enrollment.java
+│   │           │   └── Student.java
+│   │           ├── repository/
+│   │           │   ├── CourseRepository.java
+│   │           │   ├── EnrollmentRepository.java
+│   │           │   └── StudentRepository.java
+│   │           ├── service/
+│   │           │   ├── CourseService.java
+│   │           │   ├── EnrollmentService.java
+│   │           │   └── StudentService.java
+│   │           └── StudentCourseManagerApplication.java
+│   ├── resources/
+│   │   ├── static/
+│   │   │   ├── css/
+│   │   │   │   └── style.css
+│   │   │   └── js/
+│   │   │       └── scripts.js
+│   │   └── application.properties
+│   └── webapp/
+│       └── WEB-INF/
+│           └── views/
+│               ├── course/
+│               │   ├── create.jsp
+│               │   ├── list.jsp
+│               │   └── update.jsp
+│               ├── enrollment/
+│               │   ├── create.jsp
+│               │   └── list.jsp
+│               ├── student/
+│               │   ├── create.jsp
+│               │   ├── list.jsp
+│               │   └── update.jsp
+│               └── home.jsp
+└── test/
+    └── java/
+        └── com/
+            └── scm/
+                ├── controller/
+                ├── service/
+                └── repository/
+```
+ 
 
 ## Acknowledgments
 
