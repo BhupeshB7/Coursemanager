@@ -42,14 +42,8 @@ public class EnrollmentController {
     public String listEnrollments(
             @RequestParam(name = "page", defaultValue = "0") int page,
             Model model) {
-
-        // Fixed page size of 10
         int pageSize = 10;
-
-        // Get paginated enrollments
         Page<Enrollment> enrollmentPage = enrollmentService.getEnrollmentsPage(page, pageSize);
-
-        // Add pagination attributes to model
         model.addAttribute("enrollments", enrollmentPage.getContent());
         model.addAttribute("currentPage", page);
         model.addAttribute("totalPages", enrollmentPage.getTotalPages());
@@ -59,11 +53,8 @@ public class EnrollmentController {
     }
     @GetMapping("/view/{id}")
     public String viewEnrollment(@PathVariable("id") Long id, Model model) {
-        // Fetch enrollment using your service/repository
-        Enrollment enrollment = enrollmentService.getEnrollmentById(id); // replace with your code
-        model.addAttribute("enrollment", enrollment);
-
-        // Maps to: /WEB-INF/views/enrollment/enrollment-view.jsp
+        Enrollment enrollment = enrollmentService.getEnrollmentById(id);
+        model.addAttribute("enrollment", enrollment); 
         return "enrollment/enrollment-view";
     }
     @GetMapping("/create")
