@@ -128,8 +128,8 @@ This Course Management System is a simplified Spring Boot application designed t
 - `GET /enrollments/student/{studentId}` - View student enrollments
 - `POST /enrollments/update-grade/{id}` - Update enrollment grade
 - `GET /enrollments/delete/{id}` - Delete an enrollment
-### Fronted Features
-## Features
+
+## Fronted Features
 
 ### Student Management
 - Add new students with name, email, phone number, and address
