@@ -9,50 +9,7 @@
             <title>Student List - Student Course Manager</title>
             <link rel="stylesheet" href="<c:url value='/css/style.css' />" />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-            <style>
-                .pagination {
-                    display: flex;
-                    justify-content: center;
-                    margin: 20px 0;
-                    list-style: none;
-                    padding: 0;
-                }
-
-                .pagination li {
-                    margin: 0 5px;
-                }
-
-                .pagination a {
-                    display: inline-block;
-                    padding: 8px 16px;
-                    text-decoration: none;
-                    color: #333;
-                    background-color: #f4f4f4;
-                    border-radius: 4px;
-                    transition: background-color 0.3s;
-                }
-
-                .pagination a:hover {
-                    background-color: #ddd;
-                }
-
-                .pagination .active a {
-                    background-color: #4CAF50;
-                    color: white;
-                }
-
-                .pagination .disabled a {
-                    color: #aaa;
-                    cursor: not-allowed;
-                }
-
-                .pagination-info {
-                    text-align: center;
-                    margin-bottom: 10px;
-                    font-size: 0.9em;
-                    color: #666;
-                }
-            </style>
+           
         </head>
 
         <body>

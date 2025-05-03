@@ -186,6 +186,7 @@ src/
 │   │           ├── controller/
 │   │           │   ├── CourseController.java
 │   │           │   ├── EnrollmentController.java
+│   │           │   ├── HomeController.java
 │   │           │   └── StudentController.java
 │   │           ├── model/
 │   │           │   ├── Course.java
@@ -217,7 +218,6 @@ src/
 │               ├── enrollment/
 │               │   ├── create.jsp
 │               │   └── list.jsp
-|               |   └── enrollment-view.jsp
 │               ├── student/
 │               │   ├── create.jsp
 │               │   ├── list.jsp
@@ -226,22 +226,10 @@ src/
 └── test/
     └── java/
         └── com/
-            └── bda/
-                └── assignment/
-                    └── coursemanagement/
-                        ├── model/
-                        │   ├── CourseModelTest.java
-                        │   ├── StudentModelTest.java
-                        │   └── EnrollmentModelTest.java
-                        ├── controller/
-                        │   ├── CourseControllerTest.java
-                        │   ├── StudentControllerTest.java
-                        │   └── EnrollmentControllerTest.java
-                        |── service/
-                        |    ├── CourseServiceTest.java
-                        |    ├── StudentServiceTest.java
-                        |    └── EnrollmentServiceTest.java
-                        | -- CourseManagementApplicationTest.java
+            └── scm/
+                ├── controller/
+                ├── service/
+                └── repository/
 ```
  
 
